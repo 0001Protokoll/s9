@@ -7,11 +7,19 @@
 
 \section{Theoretische Grundlagen \cite{wedler}}
 
-Trifft kollimiertes Licht auf einem kleinen Spalt der Breite $b$ zeigt es ein Verhalten, welches der in der Strahlenoptik geltenden Gesetze widerspricht. Anzunehmen sei eigentlich, dass paralleles Licht, welches durch den Spalt auf eine dahinter liegende Sammellinse fällt, nur in einem Punkt gebündelt erscheinen sollte. Jedoch beobachtet man stattdessen ein Beugungsmuster, welches auch als Fraunhofer-Beugungsmuster bezeichnet wird.
+Trifft kollimiertes Licht auf einem kleinen Spalt der Breite $b$ zeigt es ein Verhalten, welches der in der Strahlenoptik geltenden Gesetze widerspricht. Anzunehmen sei eigentlich, dass paralleles Licht, welches durch einen Spalt auf eine dahinter liegende Sammellinse fällt, nur in einem Punkt gebündelt erscheinen sollte. Jedoch beobachtet man stattdessen ein Beugungsmuster.
 
 
 
-Dass das Licht ein solches Verhalten zeigt kann auf das Huygens-Prinzip zurückgeführt werden. Dieses besagt, dass jeder Punkt einer ebenen Lichtwelle (eine sogenannte Wellenfront), Ausgangspunkt einer neuen Elementarwelle ist. Trifft nun eine solche Front auf einen Spalt der Breite b wird jeder Punkt der innerhalb des Spalts liegt zum Ausgangspunktes einer Elementarwelle. Es zeigt sogenannte Grenzeffekte. Es breiten sich also Kreisförmig in den Schatten des Raums hinter dem Spalt aus. Dabei zeigen Lichtwellen das zu beobachtenden Interferenzmuster. Die  Intensität des zu beobachtende Interferenzmuster kann durch einen Verlauf einer quadratischen \textit{sinus Cardinalis} ($sinc(x)=\frac{sin(x)}{x}$) Funktion beschrieben werden.
+Dass das Licht ein solches Verhalten zeigt, kann auf das Huygens-Prinzip zurückgeführt werden. Dieses besagt, dass jeder Punkt einer ebenen Lichtwelle (eine sogenannte Wellenfront) Ausgangspunkt einer neuen Elementarwelle ist. Trifft nun eine solche Front auf einen Spalt der Breite $b$ wird jeder Punkt der innerhalb des Spalts liegt zum Ausgangspunktes einer Elementarwelle. Das nun sich ausbreitende Licht interferiert und zeigt sogenannte Grenzeffekte. Es breiten sich also Kreisförmig in den Schatten des Raums hinter dem Spalt aus. 
+
+
+
+Dabei ist nun das auf dem Schirm zu beobachtende Interferenzmuster davon abhängig, ob es sich bei dem Beugungsmuster um eine sogenannte Fresnelsche Beugung handelt, also einer solchen, bei der das Beugungsobjekt und die Abbildungsebene in voneinander kleinen Abständen angeordnet sind oder um eine Fraunhoferbeugung, bei der der Grenzfall unendlich großer Abstände des eben genannten Objekts und dem Schirm vorliegt. 
+Im diesem Versuch wird zweiteres Beugungsmuster beobachtet, wobei der unendlich große Abstand mittels einer Sammellinse erreicht wird, welche das Licht in einem Punkt bündelt. Damit erscheint der Schirm optisch unendlich weit, da sich laut Definition parallele Strahlen im unendlichen treffen.
+\\
+
+Die  Intensität des Frauenhofer Interferenzmuster kann durch einen Verlauf einer quadratischen \textit{sinus Cardinalis} ($sinc(x)=\frac{sin(x)}{x}$) Funktion beschrieben werden.
 
 
 \begin{equation}
@@ -20,19 +28,28 @@ Dass das Licht ein solches Verhalten zeigt kann auf das Huygens-Prinzip zurückg
   \text{für} \quad \quad    x=0 & I(x)=I_0\\    
    \end{cases}
 \end{equation}
-Dabei ist $b$ die Spaltbreite $\varphi$ der Beugungswinkel und $\lambda$ die Wellenlänge des Lichts.
+Es gilt also, dass bei $\varphi=0$ das Inentsitätsmaximum $I_0$ das sogenannte Hauptmaximums gefunden wird. Dabei ist $b$ die Spaltbreite $\varphi$ der Beugungswinkel und $\lambda$ die Wellenlänge des Lichts.
 
 
 \begin{equation}
 I(\varphi)=I_0 \cdot\left(\frac{sin(k\cdot sin(\varphi) )}{k\cdot sin(\varphi)}\right)^2 \quad \quad \text{mit} \quad \quad k =\frac{\pi \cdot b}{\lambda }
 \end{equation}
 
-Es gilt, dass bei $\varphi=0$ das Inentsitätsmaximum $I_0$ das sogenannte Hauptmaximums gefunden wird und jedes weitere Maxima nach folgender Gesetzmäßigkeit gefunden werden kann:
 
 
+
+
+
+Im Versuch wird jedoch nicht der Beugungswinkel $\varphi$ direkt gemessen sondern der Abstand $a$ zwischen dem Hauptmaximum und den danebenliegenden Nebenmaximum. Durch einfache Trigonometrie ist hiermit mit bekannten Abstand $f$ der Linse zum Spalt der Winkel $\varphi$ zugänglich.
 
 
 \begin{equation}
-b\cdot sin(\varphi)=(2 \cdot k+1)\cdot \frac{\lambda}{2}=\left(k+\frac{1}{2}\right)\cdot \lambda
-\end{equation} 
+arctan\left(\frac{a}{f}\right)=\varphi
+\end{equation}
+
+Daraus folgt also 
+
+\begin{equation}
+I\left(\varphi\right)=I_0 \cdot\left(\frac{sin\left(k\cdot sin\left(arctan\left(\frac{a}{f}\right)\right) \right)}{k\cdot sin\left(arctan\left(\frac{a}{f}\right)\right)}\right)^2 \quad \quad \text{mit} \quad \quad k =\frac{\pi \cdot b}{\lambda }
+\end{equation}
 
