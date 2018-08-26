@@ -1,26 +1,38 @@
 %\input{usepackage.tex}
 
  
-\begin{document}
+%\begin{document}
 \section{Zusammenfassung}
 
-Mittels der im ersten Teil exakt bestimmten Spaltbreite durch die Messung des Intensitätsprofil eines Lasers mit bekannter Wellenlänge, konnte die Wellenlänge durch ebenjene Messung eines roten, blauen und infraroten Lasers gemessen werden. Die Ergebnisse sind  in der untenstehenden Tabelle \ref{Zusammenfassung} zusammengefasst.
+Mittels der im ersten Teil exakt bestimmten Spaltbreite durch die Messung des Intensitätsprofil eines Lasers mit bekannter Wellenlänge, konnte die Wellenlänge durch ebenjene Messung eines roten, blauen und infraroten Lasers gemessen werden. Für die Kalibrierung konnte folgende Formel gefunden werden:
+
+\begin {equation}
+Spaltbreite = 0.0094203 x + 0.17398
+\end {equation}
+
+Entsprechend wurde die Spalteinstellung 8 genommen, da hier die Spaltöffnung etwa $250~\mu m$ entspricht.
+
+
+
+Die Ergebnisse, der Wellenlängenbestimmungen, der unbekannten Laser sind in der untenstehenden Tabelle \ref{Zusammenfassung} zusammengefasst.
 
 
 \begin{table}[H]
 \centering
 \label{Zusammenfassung}
 	\caption{Zusammenfassung der ermittelten Wellenlängen der unbekannten Laser }
-	\begin{tabular}{C{0.15\linewidth}|C{0.15\linewidth}}
-		Laser & Wellenlänge in nm\\
+	\begin{tabular}{C{0.15\linewidth}|C{0.15\linewidth}|C{0.15\linewidth}}
+		Laser & Wellenlänge in nm & Literaturwert in nm\\
 		\hline \addlinespace[1ex] 
-		$ rot $ & $707.46$\\
-		$ blau $ & $440.24$\\
-		$ infrarot $ & $858.16$\\
+		$ rot $ & $707.5 \pm 21.2 $ & $630 - 750$\\
+		$ blau $ & $440.2 \pm 13.0$ & $ 430 - 480$\\
+		$ infrarot $ & $858.2 \pm 25.7$ & $750 - 3000$ \\
 	\end{tabular}
 \end{table}
 
-Die gemessenen Wellenlängen der unbekannten Laser passen grob in den Wellenlängenbereich der beobachteten Farben.
+Die gemessenen Wellenlängen liegen gut im Wellenlängenbereich der jeweiligen Farben. Einzig die Wellenlänge des blauen Lasers liegt nahe am unteren Rand des Bereiches. Dies passt jedoch zu der Beobachtung, dass die Farbe des blauen Lasers fast ins Violette ging und schwach zu erkennen war. 
+
+Neben dem Fehler in dem Abstand von Spalt und Linse können ebenso alle anderen manuell eingestellten Abstände fehlerhaft sein. Zudem muss für eine perfekte Messung der ganze Aufbau linear sein, da schon geringe Abweichungen im Winkel z.B. der Linse zu fehlern führen können. Eine weitere Fehlerursache können unregelmäßigkeiten in den optischen Geräten sein wie z.B. Kratzer in der Linse oder Defekte auf dem Detektor sein.
 
 %\end{document}
 
